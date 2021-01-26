@@ -80,10 +80,10 @@
 }
 
 .top-news-left-side .breaking-news {
-    background: url("../img/Trump-Twitter-796x418.jpg") no-repeat;
+    background: url("../img/sinovac.jpg") no-repeat;
     width: 50vw;
     height: 26.3vw;
-    background-size: contain;
+    background-size: cover;
     position: relative;
 }
 
