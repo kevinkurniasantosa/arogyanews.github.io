@@ -11,7 +11,7 @@
 }
 
 #header .logo-ams {
-    padding: 1vw;
+    padding: 0.2vw;
     width: 14.5vw;
 }
 
@@ -23,9 +23,11 @@
 
 /* SEARCH BAR */
 #search-bar { 
-    border: 0.15vw solid black;
+    border: 0.2vw solid black;    
     padding: 1vw;
     margin: 1vw 2vw 1vw;
+    background-color: 005eb8;
+    color: white;
 }
 
 .search-bar-1 {
@@ -64,7 +66,7 @@
 
 /* TOP NEWS */
 #top-news {
-    margin: 1vw 2vw 1vw;
+    margin: 2vw 2vw 1vw;
     display: flex;
 }
 
@@ -100,7 +102,11 @@
     height: 100%;
 }
 
-.carousel-inner h6 {
+.careousel-inner .carousel-item img:hover {
+    color: darkorange;
+}
+
+.carousel-inner .carousel-item h6 {
     background-color: rgba(0, 0, 0, 0.5);
     font-size: 1.4vw;
     color: white;
@@ -109,6 +115,10 @@
     position: absolute;
     bottom: 0;
     padding: 1.5vw;
+}
+
+.carousel-inner .carousel-item h6:hover {
+    color: darkorange;
 }
 
 /* .breaking-news-headline {
@@ -130,7 +140,7 @@
 } */
 
 .berita-terkait {
-    background-color: lavender;
+    background-color: skyblue;
     padding: 0.5vw 1vw;
 }
 
@@ -145,6 +155,16 @@
     font-size: 1.1vw;
     margin-right: 2vw;
 }
+
+.berita-terkait-content a {
+    color: black;
+}
+
+.berita-terkait-content a:hover{
+    color: crimson;
+}
+
+
 
 .berita-terkait-content {
     display: flex;
@@ -182,13 +202,32 @@
     margin-left: 1vw;
 }
 
+.latest-news-1 a, .latest-news-2 a, .latest-news-3 a {
+    color: black;
+    position: relative;
+}
+
+.latest-news-1 a:hover, .latest-news-2 a:hover, .latest-news-3 a:hover {
+    text-decoration: none;
+    color: crimson;
+}
+
 .latest-news-1-img, .latest-news-2-img, .latest-news-3-img {
     width: 15vw;
+    height: auto;
+}
+
+.latest-news-1-pubdate, .latest-news-2-pubdate, .latest-news-3-pubdate {
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 0;
 }
 
 /* CATEGORY NEWS / MID NEWS */
 #mid-news {
-    margin: 1vw 2vw 1vw;
+    margin: 0vw 2vw 0vw;
+    padding: 1.7vw 1vw 1.7vw;
+    background-color: f0f4f5;
 }
 
 #mid-news .col-3 {
@@ -246,9 +285,19 @@
     bottom: 0;
     padding: 0.8vw;
     margin-bottom: 0;
-    color: white;
+    /* color: white; */
     font-weight: normal;
     font-size: 1.2vw;
+}
+
+.cat1-news-top a, .cat2-news-top a, .cat3-news-top a, .cat4-news-top a {
+    /* text-decoration: none; */
+    color: white;
+}
+
+.cat1-news-top a:hover, .cat2-news-top a:hover, .cat3-news-top a:hover, .cat4-news-top a:hover {
+    text-decoration: none;
+    color: darkorange;
 }
 
 .cat1-news-mid, .cat2-news-mid, .cat3-news-mid, .cat4-news-mid {
@@ -265,6 +314,14 @@
     margin-bottom: 0;
 }
 
+.cat1-news-mid a, .cat2-news-mid a, .cat3-news-mid a, .cat4-news-mid a {
+    color:black;
+}
+
+.cat1-news-mid a:hover, .cat2-news-mid a:hover, .cat3-news-mid a:hover, .cat4-news-mid a:hover {
+    color: crimson;
+}
+
 .cat1-news-bot, .cat2-news-bot, .cat3-news-bot, .cat4-news-bot {
     font-size: 1.05vw;
 }
@@ -276,11 +333,20 @@
     list-style: circle;
 }
 
+.cat1-news-bot ul li a, .cat2-news-bot ul li a, .cat3-news-bot ul li a, .cat4-news-bot ul li a {
+    color: black;
+}
+
+.cat1-news-bot ul li a:hover, .cat2-news-bot ul li a:hover, .cat3-news-bot ul li a:hover, .cat4-news-bot ul li a:hover {
+    color: crimson;
+}
+
 /* NEWSLETTER SUBSCRIPTION */ 
 #newsletter-sub {
     border: 0.2vw solid black;
     padding: 2vw;
     margin: 3vw 4vw 1vw;
+    background-color: azure;
 }
 
 .subscribe-newsletter-title {
@@ -319,7 +385,7 @@
 
 /* Popular News */ 
 #bot-news {
-    margin: 3.5vw 2vw 1vw;
+    margin: 3.5vw 5vw 1vw;
 }
 
 #bot-news .col-3 {
@@ -349,6 +415,7 @@
     background-color: midnightblue;
     color: white;
     padding: 3vw;
+    border-top: 0.7vw solid black;
 }
 
 #footer .logo-ams-footer {
@@ -358,6 +425,15 @@
 .logo-footer-container {
     padding-right: 12vw;
     padding-left: 1vw;
+}
+
+.category-footer a, .about-ams-footer a {
+    color: white;
+}
+
+.category-footer a:hover, .about-ams-footer a:hover {
+    text-decoration: none;
+    color: darkorange;
 }
 
 .category-footer {
@@ -416,8 +492,24 @@
     font-size: 1.15vw;
 }
 
+.sub-choice-footer a {
+    color: white;
+}
+
+.sub-choice-footer p:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color:darkorange;
+}
+
+.sub-choice-footer p:active {
+    text-decoration: underline;
+    color:darkorange;
+}
+
 .sub-choice-footer p:nth-child(-n+2)::after {
     content: "|";
+    color: white;
     padding-left: 2.5vw;
     position: absolute;
 }
