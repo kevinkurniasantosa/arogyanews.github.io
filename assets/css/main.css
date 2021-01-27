@@ -80,27 +80,54 @@
 }
 
 .top-news-left-side .breaking-news {
-    background: url("../img/sinovac.jpg") no-repeat;
-    width: 50vw;
+    /* background: url("../img/sinovac.jpg") no-repeat; */
+    /* width: 50vw; */
     height: 26.3vw;
-    background-size: cover;
+    /* background-size: cover; */
     position: relative;
 }
 
-.breaking-news-headline {
+.carousel-inner {
+    width: 50vw;
+    height: 26.3vw;
+}
+
+.carousel-inner .d-block {
+    width: 100%;
+}
+
+.carousel-inner .carousel-item {
+    height: 100%;
+}
+
+.carousel-inner h6 {
     background-color: rgba(0, 0, 0, 0.5);
+    font-size: 1.4vw;
+    color: white;
+    margin-bottom: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 1.5vw;
+}
+
+/* .breaking-news-headline {
     position: absolute;
     bottom: 0;
     width: 100%;
     bottom: 0;
     padding: 1.5vw;
-}
+} */
 
-.breaking-news-headline h6 {
+/* .breaking-news-headline h6 {
+    background-color: rgba(0, 0, 0, 0.5);
     font-size: 1.4vw;
     color: white;
     margin-bottom: 0;
-}
+    position: absolute;
+    bottom: 0;
+    padding: 1.5vw;
+} */
 
 .berita-terkait {
     background-color: lavender;
@@ -422,10 +449,16 @@
 .sub-email-footer ul li {
     border-radius: 50%;
     display: block;
-    height: 40px;
-    padding: 12px;
+    padding: 1vw;
     text-align: center;
-    width: 40px;
+    height: 4vw;
+    width: 4vw;
+    margin: 2vw 1vw 0 0;
+    background-color: darkblue;
+}
+
+.social-links-footer .fa  {
+    font: normal normal normal 2vw FontAwesome;
 }
 
 
